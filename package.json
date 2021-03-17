@@ -1,0 +1,27 @@
+{
+  "name": "pwa-complete-guide",
+  "version": "1.0.0",
+  "description": "A complete guide to PWAs. Building a simple Instagram clone.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -c-1"
+  },
+  "keywords": [
+    "pwa",
+    "progressive",
+    "web",
+    "app",
+    "complete",
+    "tutorial"
+  ],
+  "author": "Mahdi momeni",
+  "license": "ISC",
+  "devDependencies": {
+    "firebase": "^7.8.2",
+    "firebase-tools": "^7.13.0",
+    "http-server": "^0.9.0"
+  },
+  "dependencies": {
+    "web-push": "^3.4.3"
+  }
+}

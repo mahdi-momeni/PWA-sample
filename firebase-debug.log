@@ -1,0 +1,64 @@
+[debug] [2020-02-21T15:24:28.019Z] ----------------------------------------------------------------------
+[debug] [2020-02-21T15:24:28.022Z] Command:       /home/mahdi/.nvm/versions/node/v12.16.1/bin/node /home/mahdi/mahdi/projects/pwa/node_modules/.bin/firebase deploy
+[debug] [2020-02-21T15:24:28.022Z] CLI Version:   7.13.0
+[debug] [2020-02-21T15:24:28.022Z] Platform:      linux
+[debug] [2020-02-21T15:24:28.022Z] Node Version:  v12.16.1
+[debug] [2020-02-21T15:24:28.023Z] Time:          Fri Feb 21 2020 18:54:28 GMT+0330 (Iran Standard Time)
+[debug] [2020-02-21T15:24:28.023Z] ----------------------------------------------------------------------
+[debug] [2020-02-21T15:24:28.023Z] 
+[debug] [2020-02-21T15:24:28.076Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-21T15:24:28.077Z] > authorizing via signed-in user
+[debug] [2020-02-21T15:24:28.077Z] [iam] checking project pwagram-b0804 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-02-21T15:24:28.080Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-21T15:24:28.081Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-21T15:24:28.772Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-21T15:24:28.825Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/pwagram-b0804:testIamPermissions  
+
+[debug] [2020-02-21T15:24:29.470Z] <<< HTTP RESPONSE 403
+[debug] [2020-02-21T15:24:29.470Z] <<< HTTP RESPONSE BODY <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 403 (Forbidden)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>403.</b> <ins>That’s an error.</ins>
+  <p>Your client does not have permission to get URL <code>/v1/projects/pwagram-b0804:testIamPermissions</code> from this server.  <ins>That’s all we know.</ins>
+
+[debug] [2020-02-21T15:24:29.474Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 403, Unknown Error
+[debug] [2020-02-21T15:24:29.476Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/pwagram-b0804  
+ 
+[debug] [2020-02-21T15:24:30.226Z] <<< HTTP RESPONSE 403
+[debug] [2020-02-21T15:24:30.227Z] <<< HTTP RESPONSE BODY <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 403 (Forbidden)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>403.</b> <ins>That’s an error.</ins>
+  <p>Your client does not have permission to get URL <code>/v1beta1/projects/pwagram-b0804</code> from this server.  <ins>That’s all we know.</ins>
+
+[debug] [2020-02-21T15:24:30.228Z] HTTP Error: 403, Unknown Error
+[debug] [2020-02-21T15:24:30.534Z] FirebaseError: HTTP Error: 403, Unknown Error
+    at module.exports (/home/mahdi/mahdi/projects/pwa/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Request._callback (/home/mahdi/mahdi/projects/pwa/node_modules/firebase-tools/lib/api.js:39:35)
+    at Request.self.callback (/home/mahdi/mahdi/projects/pwa/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:311:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.<anonymous> (/home/mahdi/mahdi/projects/pwa/node_modules/request/request.js:1154:10)
+    at Request.emit (events.js:311:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at IncomingMessage.<anonymous> (/home/mahdi/mahdi/projects/pwa/node_modules/request/request.js:1076:12)
+    at Object.onceWrapper (events.js:417:28)
+    at IncomingMessage.emit (events.js:323:22)
+    at IncomingMessage.EventEmitter.emit (domain.js:482:12)
+    at endReadableNT (_stream_readable.js:1204:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project pwagram-b0804. Please make sure the project exists and your account has permission to access it.

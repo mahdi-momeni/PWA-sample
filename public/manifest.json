@@ -1,0 +1,18 @@
+{
+  "name": "instgram as PWA",
+  "short_name": "PWAgram",
+  "icons": [{
+    "src": "app-icon-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }],
+  "start_url": "/index.html",
+  "scope": ".",
+  "display" : "standalone",
+  "orientation" : "portrait-primary",
+  "background_color" : "#fff",
+  "theme_color": "#3f51b5",
+  "description": "simple instagram clone with PWA",
+  "dir": "ltr",
+  "lang": "en_US"
+}
