@@ -74,7 +74,7 @@ self.addEventListener('activate', function (event) {
     );
     return self.clients.claim();
 });
-// add event listener on fetching ( dynamic caching add every thing that requested to cache )
+// add event listener on fetching ( dynamic caching : add every thing that requested to cache storage )
 /*self.addEventListener('fetch', function (event) {
     // console.log('fetching', event);
     event.respondWith(
@@ -127,7 +127,7 @@ self.addEventListener('fetch', function (event) {
             })
         )
     }
-    // if request static files use cache only strategy
+    // if user request static files -> use cache only strategy
     else if (isInArray(event.request.url, STATIC_FILES)) {
         event.respondWith(caches.match(event.request));
     } else {
@@ -165,7 +165,8 @@ self.addEventListener('fetch', function (event) {
 
 });
 
-// when connecting to net
+// when user connected to internet
+// send all request that user sent in offline mode
 self.addEventListener('sync', function (event) {
     console.log('sw background syncing');
     if (event.tag === 'sync-new-posts') {
